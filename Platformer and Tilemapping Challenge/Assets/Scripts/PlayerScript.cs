@@ -20,8 +20,6 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D rd2d;
     private bool facingRight = true;
     private int score;
-    private int hozMovement;
-
     Animator anim;
 
 
@@ -31,7 +29,6 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         rd2d = GetComponent<Rigidbody2D>();
-        hozMovement = 0;
         anim = GetComponent<Animator>();
         winText.text = "";
         score = 0;
